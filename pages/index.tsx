@@ -1,3 +1,5 @@
+import { Heading } from "@chakra-ui/react";
+
 export default function Home() {
-  return <h1>World Trip</h1>;
+  return <Heading>World Trip</Heading>;
 }
