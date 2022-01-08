@@ -1,0 +1,34 @@
+{
+  "continents": [
+    {
+      "slug": "europa",
+      "title": "Europa",
+      "description": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso,[1] e o mar Negro a sudeste.[2] A Europa é limitada pelo oceano Glacial Ártico e outros corpos de água no norte, pelo oceano Atlântico a oeste, pelo mar Mediterrâneo ao sul, e pelo mar Negro e por vias navegáveis interligadas ao sudeste. No entanto, as fronteiras para a Europa, um conceito que remonta à Antiguidade clássica, são um tanto arbitrárias, visto que o termo 'Europa' pode referir-se a uma distinção cultural e política ou geográfica."
+    },
+    {
+      "slug": "america",
+      "title": "América",
+      "description": "América (algumas vezes usado o termo Américas) (em aimará: Amërika, em castelhano: América, em francês: Amérique, em guarani: Amérika, em inglês: America, em neerlandês: Amerika, em quíchua: Amirika) é o continente localizado no hemisfério ocidental e que se estende, no sentido norte-sul, desde o oceano Ártico até o cabo Horn, ao longo de cerca de 15 mil quilômetros. O seu extremo oriental insular (não continental) encontra-se na Groenlândia, o Nordostrundingen, enquanto o ocidental localiza-se nas Aleutas. Já os extremos continentais (não insulares) são o cabo Príncipe de Gales, o extremo ocidental, no Alasca, e a ponta do Seixas, extremo oriental, no estado brasileiro da Paraíba. A América compõe-se de duas massas de dimensões continentais (as Américas do Norte e do Sul) ligadas por um istmo (o istmo do Panamá) que é cortado por um canal (o canal do Panamá). Além dessas divisões, há os conceitos das chamadas América Central e Mesoamérica."
+    },
+    {
+      "slug": "asia",
+      "title": "Ásia",
+      "description": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial. A Ásia faz fronteira no lado ocidental com a África e com a Europa, e no lado oriental com o oceano Pacífico, a Oceania e, em menor proporção, com a América do Norte, pelo Estreito de Bering. O ponto extremo setentrional do continente está localizado no oceano Glacial Ártico. Mas na parte meridional, a Ásia chega ao seu final na região mais quente dos trópicos, nas imediações da linha do equador.[1] Na Ásia são encontradas algumas das montanhas mais altas do mundo; os rios mais extensos; os maiores desertos, planícies e planaltos; as selvas e florestas mais densas. A altitude máxima e a mínima está localizada na Ásia. O monte Everest, a altitude máxima do planeta, está localizada a 8 848 m acima do nível do mar; ao longo da linha fronteiriça da República Democrática Federal do Nepal com a região autônoma chinesa do Tibete. O litoral do mar Morto, a planície de menor altitude do mundo, estão localizadas a 396 m abaixo do nível do mar, na região fronteiriça do Estado de Israel com o Reino Hashemita da Jordânia.[1]"
+    },
+    {
+      "slug": "africa",
+      "title": "África",
+      "description": "A África é o terceiro continente mais extenso (depois da Ásia e da América) com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de um bilhão de pessoas (estimativa para 2005[1]), representando cerca de um sétimo da população mundial, e 54 países independentes. Tem se transformado na ultima década em uma continente cada vez mais católico.[2]"
+    },
+    {
+      "slug": "oceania",
+      "title": "Oceania",
+      "description": "Oceania ou Oceânia[nota 1] é uma região geográfica[1][2][3] composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville. O termo é usado hoje em vários idiomas para designar uma região geográfica e política que compreende o continente da Austrália e ilhas do Oceano Pacífico adjacentes.[4][5][6]"
+    },
+    {
+      "slug": "antartida",
+      "title": "Antártida",
+      "description": "Antártida ou Antártica (ver questão do nome) é o mais meridional e o segundo menor dos continentes (maior apenas que a Austrália), com uma superfície de 14 milhões de quilômetros quadrados. Rodeia o polo Sul, e por esse motivo está quase completamente coberta por enormes geleiras (glaciares), exceção feita a algumas zonas de elevado aclive nas cadeias montanhosas e à extremidade norte da península Antártica. Sua formação se deu pela separação do antigo supercontinente Gondwana há aproximadamente 100 milhões de anos e seu resfriamento aconteceu nos últimos 35 milhões de anos.[1]"
+    }
+  ]
+}

@@ -1,18 +1,26 @@
 import { Box, Flex, Grid, Heading, Img, Text } from "@chakra-ui/react";
+import axios from "axios";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { ParsedUrlQuery } from "querystring";
 import CountryCard from "../../components/CountryCard";
 import Header from "../../components/Header";
+import { api } from "../../services/api";
 
 interface ContinentProps {
   slug: string;
+  title: string;
+  description: string;
 }
 
 interface IParams extends ParsedUrlQuery {
   slug: string;
 }
 
-export default function Continent({ slug }: ContinentProps) {
+export default function Continent({
+  slug,
+  title,
+  description,
+}: ContinentProps) {
   return (
     <>
       <Header goBack />
@@ -33,7 +41,7 @@ export default function Continent({ slug }: ContinentProps) {
           fontFamily="Poppins"
           fontWeight={600}
         >
-          Europa
+          {title}
         </Heading>
       </Flex>
 
@@ -48,10 +56,7 @@ export default function Continent({ slug }: ContinentProps) {
             fontWeight={400}
             w={["100%", "100%", "50%"]}
           >
-            A Europa é, por convenção, um dos seis continentes do mundo.
-            Compreendendo a península ocidental da Eurásia, a Europa geralmente
-            divide-se da Ásia a leste pela divisória de águas dos montes Urais,
-            o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+            {description}
           </Text>
           <Flex
             w={["100%", "100%", "40%"]}
@@ -177,7 +182,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { slug } = params as IParams;
+
+  const continent = await api.get(`/continents?slug=${slug}`);
+  const continentProps = continent.data[0];
   return {
-    props: { slug, id: "id" },
+    props: { ...continentProps },
   };
 };
