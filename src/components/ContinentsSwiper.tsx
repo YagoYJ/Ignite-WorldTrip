@@ -70,7 +70,7 @@ export default function ContinentsSwiper() {
               backgroundSize="cover"
             >
               <Link
-                href={`continent/${continent.slug}`}
+                href={`/continent/${continent.slug}`}
                 passHref
                 cursor="pointer"
                 textAlign="center"

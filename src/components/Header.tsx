@@ -12,7 +12,7 @@ export default function Header({ goBack = false }: HeaderProps) {
       justify={goBack ? "space-between" : "center"}
       maxWidth="1160px"
       mx="auto"
-      py="7"
+      p="7"
     >
       {goBack && (
         <Link
@@ -25,7 +25,7 @@ export default function Header({ goBack = false }: HeaderProps) {
         </Link>
       )}
 
-      <Image src="./images/logo.svg" alt="World Trip" />
+      <Image src="/images/logo.svg" alt="World Trip" />
 
       {goBack && <div />}
     </Flex>

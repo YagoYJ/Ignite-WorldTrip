@@ -1,9 +1,22 @@
-import { Box, Divider, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import ContinentsSwiper from "../components/ContinentsSwiper";
 import Header from "../components/Header";
 import TravelType from "../components/TravelType";
 
 export default function Home() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <>
       <Header />
@@ -14,6 +27,7 @@ export default function Home() {
           align="center"
           justify="space-between"
           py="46"
+          px="7"
         >
           <Flex direction="column" maxWidth="525px">
             <Heading color="gray.200" fontSize="2xl" fontWeight={500}>
@@ -28,14 +42,24 @@ export default function Home() {
             </Text>
           </Flex>
 
-          <Image
-            src="./images/home-banner-airplane.svg"
-            alt="Airplane"
-            mt="6"
-          />
+          {isWideVersion && (
+            <Image
+              src="./images/home-banner-airplane.svg"
+              alt="Airplane"
+              mt="6"
+            />
+          )}
         </Flex>
       </Box>
-      <Flex maxWidth="1160px" align="center" justify="space-between" mx="auto">
+      <Flex
+        maxWidth="1160px"
+        align="center"
+        justify={["space-around", "space-between"]}
+        mx="auto"
+        wrap="wrap"
+        mt="10"
+        p="7"
+      >
         <TravelType
           iconUrl="./images/night-life-icon.svg"
           label="vida noturna"
